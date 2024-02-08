@@ -1,0 +1,37 @@
+h1{
+    color: pink ;
+    position: relative;
+    left: 600px;
+}
+.animat-log{
+    top: -220px;
+}
+.do{
+    top: 20px;
+    left: 500px;
+}
+.b{
+    top: -50px;
+    left: 88px;
+}   
+h2{
+    position: relative;
+    left: 150px;
+    top: 70px;
+    color: #d87093;
+}
+.btn-group{
+    top: -40px;
+    position: relative;
+    left: 100px;
+}
+.dropdown-menu{
+    position: absolute;
+    top: 800px;
+}
+.ba{
+    background-image: "don.jpg";
+}
+
+
+

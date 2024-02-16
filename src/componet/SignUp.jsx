@@ -33,7 +33,7 @@ export default function SignUp() {
     outline: 'none',
   };
   const cardStyles = {
-    border: '2px solid #e74c3c',
+    border: '2px solid black',
     borderRadius: '10px',
     boxShadow: '0px 8px 16px rgba(0, 0, 0, 0.4)', 
     padding: '20px',
@@ -68,7 +68,7 @@ export default function SignUp() {
     color: 'black',
     paddingLeft: 10,
     borderBottomWidth: 1.5,
-    borderBottomColor: 'red',
+    borderBottomColor: 'black',
     fontSize: 16,
     paddingBottom: 10,
     outline: 'none',
@@ -76,8 +76,8 @@ export default function SignUp() {
     marginBottom: 50, 
   };
   return (
-    <div>
-      <img src={Logo} alt="logo" className="animat-log"/>
+    <div style={{backgroundColor:"beige"}}>
+      <img src={Logo} alt="logo" className="animat-log1"/>
             <div
       className="card4"
       style={cardStyles}
@@ -85,7 +85,7 @@ export default function SignUp() {
       onMouseLeave={toggleHover}
     >
       <div className="card4-content">
-        <h2>Sign<span style={{color: 'red'}}>Up</span></h2>
+        <h2 style={{color: 'rgb(115, 100, 128)'}}>Sign<span style={{color: 'rgb(115, 100, 128)'}}>Up</span></h2>
       
 
          
@@ -119,6 +119,8 @@ export default function SignUp() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        <button className='bata' onClick={()=>{navig('/Client')}}>
+            Log <span >In</span></button>
          
        
 
@@ -126,7 +128,7 @@ export default function SignUp() {
            
            
 
-            <p>New to the App? <Link className='register-link' to='/signup'>Register</Link></p>
+            
        
       </div>
       </div>

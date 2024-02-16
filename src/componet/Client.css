@@ -1,37 +1,75 @@
-h1{
-    color: pink ;
-    position: relative;
-    left: 600px;
-}
-.animat-log{
-    top: -220px;
-}
-.do{
-    top: 20px;
-    left: 500px;
-}
-.b{
-    top: -50px;
-    left: 88px;
-}   
-h2{
-    position: relative;
-    left: 150px;
-    top: 70px;
-    color: #d87093;
-}
-.btn-group{
-    top: -40px;
-    position: relative;
-    left: 100px;
-}
-.dropdown-menu{
+
+.menu {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: -60px;
     position: absolute;
-    top: 800px;
-}
-.ba{
-    background-image: "don.jpg";
-}
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  .animat-log{
+    position: relative;
+    left: 1320px;
+    width: 150px;
+    top: -90px;
+  }
 
 
+  .custom-box {
+   background-color: #746666;
+    color: #f2ecec;
+    padding: 20px;
+    margin: 10px;
+    height: 500px;
+    width: 300px;
+    position: relative;
+    top: -30px;
+    left: 80px;
+  }
+  .custom-boxx{
+    background-color: #746666;
+    color: #f2ecec;
+    padding: 20px;
+    margin: 10px;
+    height: 500px;
+    width: 300px;
+    position: relative;
+    top: -538px;
+    left: 430px;
+  }
+  .custom-boxxx{
+    background-color: #746666;
+    color: #f2ecec;
+    padding: 20px;
+    margin: 10px;
+    height: 500px;
+    width: 300px;
+    position: relative;
+    top: -1048px;
+    left: 780px;
+  }
+  .custom-boxxxx{
+    background-color: #746666;
+    color: #f2ecec;
+    padding: 20px;
+    margin: 10px;
+    height: 500px;
+    width: 300px;
+    position: relative;
+    top: -1557px;
+    left: 1130px;
+  }
+  
 
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+ 

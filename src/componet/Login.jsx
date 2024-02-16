@@ -27,7 +27,7 @@ export default function Login() {
         outline: 'none',
       };
       const cardStyles = {
-        border: '2px solid #e74c3c',
+        border: '2px solid black',
         borderRadius: '10px',
         boxShadow: '0px 8px 16px rgba(0, 0, 0, 0.4)', 
         padding: '20px',
@@ -43,7 +43,7 @@ export default function Login() {
         alignItems: 'center',
         justifyContent: 'center',
         textAlign: 'center',
-        color: '#000000',
+        color: 'black',
         transition: 'box-shadow 0.3s ease, transform 0.3s ease',
         
       };
@@ -62,7 +62,7 @@ export default function Login() {
         color: 'black',
         paddingLeft: 10,
         borderBottomWidth: 1.5,
-        borderBottomColor: 'red',
+        borderBottomColor: 'purpel',
         fontSize: 16,
         paddingBottom: 10,
         outline: 'none',
@@ -70,8 +70,8 @@ export default function Login() {
         marginBottom: 50, 
       };    
   return (
-    <div>
-      <img src={Logo} alt="logo" className="animat-log"/>
+    <div style={{backgroundColor:"Beige"}}>
+      <img src={Logo} alt="logo" className="logo"/>
             <div
       className="card4"
       style={cardStyles}
@@ -79,11 +79,11 @@ export default function Login() {
       onMouseLeave={toggleHover}
     >
       <div className="card4-content">
-        <h2>LOG<span style={{color: 'red'}}>IN</span></h2>
+        <h2 className='log'>LOG IN</h2>
       
 
          
-        <input
+        <input className='put'
           style={input}
           placeholder="Email ID"
           type="email"
@@ -106,7 +106,8 @@ export default function Login() {
            <button className='bata' onClick={()=>{navig('/Client')}}>
             Log <span >In</span></button>
 
-<p>New to the App? <Link className='register-link' to='/Sign'>Register</Link></p>
+<p>New to the App?
+   <Link className='register-link' to='/Sign'>Register</Link></p>
        
       </div>
       </div>

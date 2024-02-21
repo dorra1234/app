@@ -7,8 +7,7 @@ import Clothes from "./componet/Clothes";
 import Food from "./componet/Food";
 import Blood from "./componet/Blood";
 import Leisure from "./componet/Leisure";
-import VotreComposant from './VotreComposant';
-import LangueSelector from './LangueSelector';
+import Cart from "./componet/Cart";
 import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 function App() {
   return (
@@ -23,8 +22,10 @@ function App() {
           <Route path="/Food" element={<Food/>}/>
           <Route path="/Blood" element={<Blood/>}/>
           <Route path="/Leisure" element={<Leisure/>}/>
-          <LangueSelector />
-          <VotreComposant />
+          <Route path="/Cart" element={<Cart/>}/>
+          
+        
+          
 
 
 

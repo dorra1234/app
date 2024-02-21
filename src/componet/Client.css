@@ -28,6 +28,7 @@
     position: relative;
     top: -30px;
     left: 80px;
+    cursor: pointer;
   }
   .custom-boxx{
     background-color: #746666;
@@ -39,6 +40,7 @@
     position: relative;
     top: -538px;
     left: 430px;
+    cursor: pointer;
   }
   .custom-boxxx{
     background-color: #746666;
@@ -50,6 +52,7 @@
     position: relative;
     top: -1048px;
     left: 780px;
+    cursor: pointer;
   }
   .custom-boxxxx{
     background-color: #746666;
@@ -61,15 +64,17 @@
     position: relative;
     top: -1557px;
     left: 1130px;
+    cursor: pointer;
   }
-  
 
   
   h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
   }
-  
-  
-  
- 
+  .loula{
+    transition: transform  0.5s;
+  }
+  .loula:hover{
+    transform: translate3d(0, -10px,  0);
+  }

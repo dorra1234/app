@@ -1,0 +1,66 @@
+
+.card{
+    position: relative;
+    width: 400px;
+    left:50px;
+    top: 50px;
+    height: 400px;
+}
+.card-img-top{
+    position:absolute;
+    width: 150px;
+    right: 50px;
+}
+.card-text{
+    position:absolute;
+    top:220px
+}
+.card-tex{
+    position:absolute;
+    top:248px
+}
+.card-te{
+    position: absolute;
+    top: 338px;
+}
+.card-t{
+    position: absolute;
+    top: 360px;
+}
+.cardd{
+    position: relative;
+    width: 400px;
+    left:400px;
+    top: -340px;
+    height: 400px;
+}
+.navbar {
+    background-color: #dd93aa; /* Couleur de fond de la barre de navigation */
+  }
+  
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    color: #e18585 !important; /* Couleur du texte des liens */
+  }
+  
+  .navbar-brand:hover,
+  .navbar-nav .nav-link:hover {
+    color: #a45f9a !important; /* Couleur du texte des liens au survol */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #c19191; /* Couleur de l'icône du bouton de bascule */
+  }
+  
+  .navbar-toggler {
+    border-color: #ad7e7e; /* Couleur de la bordure du bouton de bascule */
+  }
+  
+  .nav-item {
+    margin-right: 10px; /* Marge entre les éléments de la barre de navigation */
+  }
+  
+  .nav-link {
+    font-weight: bold; /* Épaisseur de la police des liens */
+  }
+  

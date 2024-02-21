@@ -6,18 +6,15 @@ import love from "../assets/love.png"
 import { useNavigate } from 'react-router-dom';
 import charity from  "../assets/charity.jpg"
 import 'bootstrap/dist/css/bootstrap.css';
-import { useTranslation } from 'react-i18next';
-const LangueSelector=()=>{
-  const { i18n } = useTranslation();
-  const changerLangue=(langue)=>{
-    i18n.changeLanguage(langue);
-  }
-}
+
+
 export default function Home() {
-    
+  const navig = useNavigate()
+  
   return (
 
         <div style={{ backgroundColor: '#EEEEEE' }}>
+          
            {/* logo */}
           <img src={Logo} alt="" style={{position:"relative",top:"0px",height:"150px",width:"150px"}}/>
           {/*first card */}
@@ -56,8 +53,6 @@ export default function Home() {
             Get <span >Started</span></button>
   </div>
 </div>
-<button onClick={() => changerLangue('en')}>English</button>
-      <button onClick={() => changerLangue('fr')}>Français</button>
         </div>
   )
   }

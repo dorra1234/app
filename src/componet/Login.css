@@ -8,7 +8,9 @@
     color: rgb(115, 100, 128);
     position: relative;
     top: -20px;
-}
+    text-decoration: underline;  
+    left: -10px;
+  }
 .put{
 color: blue;
 }
@@ -20,7 +22,13 @@ color: blue;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    
+  }
+  .bata:hover{
+    background-color: rgb(241, 196, 230);
+    color: black;
+    transform: translate(2px, -2px);
   }
   .register-link{
     color:rgb(115, 100, 128) ;

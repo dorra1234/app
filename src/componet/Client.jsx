@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Logo from "../assets/Logo.png"
 import { useNavigate } from 'react-router-dom';
-import SideBar from "./SideBar";
-import menu from '../assets/menu.png'
+
 import 'bootstrap/dist/css/bootstrap.css';
 import './Client.css'
 import Food from '../assets/Food.jpg'
@@ -41,12 +40,11 @@ export default function Client() {
   };
  return (
 
-    <div>
+    <div style={{backgroundColor:"#cccccc"}}>
       <br/>
       <h2 style={{position:"relative",left:"400px",top:"30px",color:"purple"}}> No act of kindness, no matter how small, is ever wasted. </h2>
       <img src={Logo} alt="logo" className="animat-log"/>
-      <img src={menu} alt='menu' className='menu'  onClick={toggleSidebar}/>
-      <SideBar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar}/>
+      
 
       <div onClick={()=>{navig('/Clothes')}} className="custom-box">
       <h2 style={{position:"relative", left:"100px",  }}>Clothes</h2>

@@ -7,7 +7,9 @@ import Clothes from "./componet/Clothes";
 import Food from "./componet/Food";
 import Blood from "./componet/Blood";
 import Leisure from "./componet/Leisure";
+import AddClothes from "./componet/AddClothes";
 import Cart from "./componet/Cart";
+import DeleteProd from "./componet/DeleteProd";
 import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 function App() {
   return (
@@ -23,12 +25,9 @@ function App() {
           <Route path="/Blood" element={<Blood/>}/>
           <Route path="/Leisure" element={<Leisure/>}/>
           <Route path="/Cart" element={<Cart/>}/>
-          
-        
-          
-
-
-
+          <Route path="/addClothes" element={<AddClothes/>}/>
+          <Route path="/Delete" element={<DeleteProd/>}/>
+         
         </Routes>
       </Router>
 

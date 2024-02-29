@@ -1,23 +1,29 @@
 
-.card{
+.card-body{
     position: relative;
-    width: 400px;
-    left:50px;
-    top: 50px;
-    height: 400px;
+    width:300px;
+    height:400px;
+    left:px;
+    top:130px;
 }
 .card-img-top{
     position:absolute;
-    width: 150px;
+    width: 200px;
+    height: 150px;
     right: 50px;
 }
-.card-text{
-    position:absolute;
-    top:220px
+.Qu{
+  position: relative;
+  top: 40px;
+  color: brown;
 }
-.card-tex{
+.lo{
     position:absolute;
-    top:248px
+    top:150px
+}
+.nu{
+    position:absolute;
+    top: 200px;
 }
 .card-te{
     position: absolute;

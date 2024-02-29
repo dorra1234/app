@@ -13,7 +13,7 @@ export default function Home() {
   
   return (
 
-        <div style={{ backgroundColor: '#EEEEEE' }}>
+        <div style={{backgroundColor:"#cccccc"}}>
           
            {/* logo */}
           <img src={Logo} alt="" style={{position:"relative",top:"0px",height:"150px",width:"150px"}}/>

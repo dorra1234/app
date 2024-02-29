@@ -1,11 +1,33 @@
-import React from 'react'
+
 import './Clothes.css'
 import 'bootstrap/dist/css/bootstrap.css';
-import tshirt from "../assets/tshirt.png"
-import Jean from "../assets/Jean.png"
-export default function Jeux() {
+import del from '../assets/del.png'
+import React, { useEffect, useState, useCallback } from 'react';
+import { BrowserRouter as Router, Route, useNavigate } from 'react-router-dom';
+import addd from "../assets/addd.png"
+import axios from 'axios';
+export default function Clothes() {
+  const navigate = useNavigate();
+  const [products, setProducts] = useState([]);
+
+  const fetchData = useCallback(async () => {
+    try {
+      const response = await axios.get('http://localhost:4000/prod/produit');
+      const allProducts = response.data;
+
+      const clothesProducts = allProducts.filter((product) => product.type === 'clothes');
+
+      setProducts(clothesProducts);
+    } catch (error) {
+      console.error('Error fetching products:', error);
+    }
+  }, []);
+
+  useEffect(() => {
+    fetchData();
+  }, [fetchData])
   return (
-    <div>
+    <div >
          <nav className="navbar navbar-expand-lg navbar-light bg-light"
          style={{position:"relative", left:"115px"}}>
       
@@ -27,24 +49,25 @@ export default function Jeux() {
         </ul>
       </div>
     </nav>
-      <div  class="card" style={{width: "18rem", left:"120px"}}>
-  <img src={tshirt} class="card-img-top" alt="tshirt" style={{left:"50px"}}/>
-  <div class="card-body">
-    <h2 class="card-text" style={{top:"210px"}}><b> <span style={{color:"#ad7e7e"}}>Pink T-shirt</span></b></h2>
-    <h5 class="card-tex"><span style={{color:"#ad7e7e"}}>Quality</span>: A high-quality pink sweater in excellent condition </h5>
-    <h5 class="card-te"> <span style={{color:"#ad7e7e"}}>location</span>: tunis ezzahra</h5>
-    <h5 class="card-t"><span style={{color:"#ad7e7e"}}>Number</span>: 20113958 </h5>
-  </div>
-</div>
-<div  class="card" style={{width: "18rem", left:"440px", top:"-350px"}}>
-  <img src={Jean} class="card-img-top" alt="Jean" style={{left:"50px"}}/>
-  <div class="card-body1">
-    <h2 class="card-text" style={{top:"210px"}}><b><span style={{color:"#ad7e7e"}}>Jean</span></b></h2>
-    <h5 class="card-tex"><span style={{color:"#ad7e7e"}} >Quality</span>: A high-quality Jean in excellent condition </h5>
-    <h5 class="card-te"><span style={{color:"#ad7e7e"}}>location</span>: tunis el manzah6</h5>
-    <h5 class="card-t"><span style={{color:"#ad7e7e"}}>Number</span>: 26711321 </h5>
-  </div>
-</div>
+    <img onClick={()=>{navigate('/addClothes')}} src={addd} alt="" style={{height:"50px", width:"50px",position:"relative",
+     left:"1400px", top:"-50px",cursor:"pointer"
+     }}/>
+    <div className="row row-cols-1 row-cols-md-3 g-2">
+        {products.map(product => (
+          <div className="col" key={product.id}>
+          <div className="card" style={{top:"20px",left:"150px", width:"280px"}}>
+              <img src={product.image} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h5 className="Qu">Quality: {product.quality}</h5>
+                <p className="lo">Location: {product.location}</p>
+                <p className="nu">Number: {product.number}</p>
+                
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+     
     </div>
   )
 }
